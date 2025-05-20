@@ -1,9 +1,14 @@
 package com.ninja.springboot_java_hibernate_test;
 
+import org.hibernate.annotations.DynamicInsert;
+import org.hibernate.annotations.DynamicUpdate;
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+@DynamicInsert
+@DynamicUpdate
 
 @Entity(name="employee")
 public class Employee 
