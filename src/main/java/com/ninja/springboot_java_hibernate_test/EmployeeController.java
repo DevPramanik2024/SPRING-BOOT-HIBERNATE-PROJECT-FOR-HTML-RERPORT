@@ -47,6 +47,11 @@ public List<Employee> alldata()
 		return erepo.findById(id);
 				
 	}
+	@GetMapping("/by/{age}")//http://localhost:8080/by/id?id=125//
+	public List<Employee> byage(@PathVariable int age)
+	{
+		return erepo.findByAge(age);				
+	}
 	
 	@GetMapping("/multiple/id")//http://localhost:8080/multiple/id?lid=12,13,15//
 	public List<Employee> multiid(@RequestParam List<Integer>lid)
