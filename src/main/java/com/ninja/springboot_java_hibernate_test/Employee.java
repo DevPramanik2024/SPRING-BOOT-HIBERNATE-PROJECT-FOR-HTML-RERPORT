@@ -1,5 +1,4 @@
 package com.ninja.springboot_java_hibernate_test;
-
 import org.hibernate.annotations.DynamicInsert;
 import org.hibernate.annotations.DynamicUpdate;
 
